@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x:hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.parallax{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+#background{
+    position: absolute;
+    height: 100vh;
+    transform: translateZ(-40px);
+    scale: 6;
+    object-fit: cover;
+}
+#foreground{
+    position: absolute;
+    height: 100vh;
+    transform: translateZ(-20px);
+    scale: 3.5;
+    object-fit: cover;
+}
+#heading{
+    margin-top: -40vh;
+    font-size: 150px;
+    text-shadow: 0px 0px 10px lightskyblue;
+    position:absolute;
+    color: whitesmoke;
+    z-index: 1;
+}
+.para{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:40px;
+    background-color: black;
+}
+.sports{
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.hsports{
+    font-size: 150px;
+    text-shadow: 0px 0px 10px lightskyblue;
+    color: whitesmoke;
+}
+.biking{
+    background-image: url(sport-1.jpg);
+}
+.paragliding{
+    background-image: url(sport-2.jpg);
+}
+.surfing{
+    background-image:url(sport-3.jpg) ;
+}
